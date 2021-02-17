@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Store</title>
+</head>
+<body>
+    <section class="container">
+        <div class="slider">
+            <div class="slides">
+                <!-- radio buttons starts-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <!-- radio buttons ends-->
+    
+                <!-- slide image starts -->
+                <div class="slide first">
+                    <img src="./images/01.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./images/02.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./images/03.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./images/04.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./images/05.jpg" alt="">
+                </div>
+    
+                <!-- slide image ends -->
+    
+                <!-- automatic navigation starts -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                </div>
+    
+                <!-- automatic navigation ends -->
+    
+            </div>
+    
+            <!-- manual navigation starts -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+            </div>
+    
+            <!-- manual navigation ends -->
+        </div>
+
+        <!-- Heading line starts from here -->
+
+        <div class="header">
+            <h1>4 Pax English Style Whole <br/> Chicken Roast with  <br/> Boiled Vegetables</h1>
+        </div>
+
+        <div class="icon-area">
+            <i class="icon1 fas fa-utensils"> <span style="padding-left: 10px;">Bakery</span></i>
+            <i class="icon2 fas fa-chart-pie"><span style="padding-left: 10px;">Serves 10</span></i>
+            <i class="icon3 fas fa-lira-sign"><span style="padding-left: 10px;">9999</span></i>
+
+        </div>
+
+        <!-- Heading line ends here -->
+        
+        <!-- Dish availability details starts from here -->
+        <div class="body-content">
+            <div class="tag-line1">
+                <h3>Dish Availability</h3>
+            </div>
+            <div class="tag-line2">
+                <h4>Choose a Date</h4>
+            </div>
+            <div class="week-days">
+
+                <ul><li>Sun</li></ul>
+                <ul><li>Mon</li></ul>
+                <ul><li>Tue</li></ul>
+                <ul><li>Wed</li></ul>
+                <ul><li>Thu</li></ul>
+                <ul><li>Fri</li></ul>
+                <ul><li>Sat</li></ul>
+    
+            </div>
+            <div class="weekend-day">
+                                
+                <ul><li class="day">13</li></ul>
+                <ul><li class="day">14</li></ul>
+                <ul><li class="day1">15</li></ul>
+                <ul><li class="day1">16</li></ul>
+                <ul><li class="day1">17</li></ul>
+                <ul><li class="day2">18</li></ul>
+                <ul><li class="day2">19</li></ul>
+    
+            </div>
+
+
+        </div>
+
+        <!-- delivery slot starts from here -->
+
+        <div class="delivery-slot">
+            <div class="tag-line3">
+                <h4>Delivery Slot</h4>
+            </div>
+            <div class="schedules">
+                <div class="time-line1">
+                    <p>10 AM - 12 AM</p>
+                    <p>10 AM - 12 AM</p>
+                    <p>10 AM - 12 AM</p>
+                </div>
+                <div class="time-line2">
+                    <p>10 AM - 12 AM</p>
+                    <p>10 AM - 12 AM</p>
+                </div>
+
+            </div>
+            <div class="order-icon">
+                <i class="icon-order fas fa-bread-slice"> <span style="padding-left: 10px;">Order Now</span></i>
+            </div>
+
+            <!-- delivery slot ends from here -->
+
+        </div>
+
+        <!-- Dish availability details ends here -->
+
+
+        <div class="review">
+            <div class="person-details">
+                <img id="person-img" src="./images/person-icon.jpg" alt="member">
+                <span class="ratting-part">
+                    <h3>Romana Rahman</h3>
+                    <img id="ratting-img" src="./images/five-start.jpg" alt="">
+                </span>
+
+            </div>
+
+            <div class="food-items">
+                <div class="time-line1">
+                    <p>Sweet</p>
+                    <p>Bakery</p>
+                    <p>Sweet</p>
+                </div>
+            </div>
+
+            <div class="review-speech">
+                <p>This is my remake version of childhood favorite. The Cheesecake</p>
+                <p>This ovaltine goodness is filled with morobba chunks and raisins then topped with crushed almonds and pistachios. <br> There is a bit of underlying ghee aroma to complete the experience.</p>
+                <p>Let this be your new tea time favorite item!</p>
+                <p>So far we have been getting rave reviews. Don't miss out!</p>
+                <p>Let this be your new tea time favorite item!</p>
+                <p>So far we have been getting rave reviews. Don't miss out!</p>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    
+
+        
+
+    <script type="text/javaScript">
+        var counter = 1;
+        setInterval(() => {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 5){
+                counter = 1;
+            }
+        }, 4000);
+
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+</body>
+</html>
